@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/khunghelp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="61dp"
+                            android:layout_marginTop="25dp"
+                            android:gravity="center"
+                            android:text="Trợ giúp"
+                            android:textColor="#FF9800"
+                            android:textStyle="bold"
+                            android:textSize="40dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_suppost_1"
+                            android:layout_width="304dp"
+                            android:layout_height="67dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/suggest_item_border">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/icon_money" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="-5 Mở theo thứ tự"
+                                android:textColor="#FFF"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_suppost_2"
+                            android:layout_width="307dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/suggest_item_border">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/icon_money" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="-5 Mở ngẫu nhiên"
+                                android:textColor="#FFF"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_suppost_3"
+                            android:layout_width="305dp"
+                            android:layout_height="56dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/suggest_item_border">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/icon_money" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="-5 Mở gợi ý           "
+                                android:textColor="#FFFF"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_suppost_4"
+                            android:layout_width="305dp"
+                            android:layout_height="57dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/suggest_item_border">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/icon_money" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="-20 Xóa ký tự sai"
+                                android:textColor="#FFFF"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/close_button" />
+    </FrameLayout>
+
+</FrameLayout>
