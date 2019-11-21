@@ -15,9 +15,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-         >
+        android:layout_marginTop="10dp"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/iv_picture"
@@ -35,24 +34,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="412dp"
         android:orientation="vertical"
         android:padding="10dp">
 
         <LinearLayout
-            android:layout_weight="1.25"
             android:id="@+id/anwser0"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="1.25"
             android:gravity="center"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/tv_suppost"
-                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="#FFFF"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -60,21 +60,57 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2.4"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/anwser1"
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="40dp"
                 android:layout_weight="1.2"
                 android:gravity="center"
-                android:orientation="horizontal" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnda1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/tile_hover" />
+
+                <Button
+                    android:id="@+id/btnda2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/tile_hover" />
+
+                <Button
+                    android:id="@+id/btnda3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/tile_hover" />
+
+                <Button
+                    android:id="@+id/btnda4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/tile_hover" />
+
+                <Button
+                    android:id="@+id/btnda5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/tile_hover" />
+
+                <Button
+                    android:id="@+id/btnda6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/tile_hover" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/anwser2"
                 android:layout_width="match_parent"
-                android:layout_height="16dp"
+                android:layout_height="30dp"
                 android:layout_weight="1.2"
                 android:gravity="center|top"
                 android:orientation="horizontal" />
@@ -82,47 +118,118 @@
         </LinearLayout>
 
 
-
         <Button
-            android:visibility="visible"
             android:id="@+id/btn_tiep"
-            android:layout_gravity="center"
-            android:text="Bỏ qua"
-            android:background="@drawable/nutxanh"
             android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/nutxanh"
+            android:text="Bỏ qua"
             android:textColor="#FFF"
-            android:layout_height="60dp"/>
+            android:visibility="visible" />
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="@drawable/te"
-           android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:background="@drawable/te"
+            android:gravity="center"
+            android:orientation="vertical">
 
-           <LinearLayout
-               android:id="@+id/plan1"
-               android:layout_width="match_parent"
-               android:layout_height="67dp"
-               android:layout_gravity="bottom"
-               android:layout_marginTop="25dp"
-               android:layout_weight="1"
-               android:gravity="center"
-               android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/plan1"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-           </LinearLayout>
+                <Button
+                    android:id="@+id/tl1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="T"></Button>
 
-           <LinearLayout
-               android:id="@+id/plan2"
-               android:layout_width="match_parent"
-               android:layout_height="66dp"
-               android:layout_gravity="bottom"
-               android:layout_weight="1"
-               android:gravity="center"
-               android:orientation="horizontal">
+                <Button
 
-           </LinearLayout>
+                    android:id="@+id/btn_tlb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="B"></Button>
+
+                <Button
+                    android:id="@+id/tl2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="O"></Button>
+
+                <Button
+                    android:id="@+id/tl4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="O"></Button>
+
+                <Button
+                    android:id="@+id/tl5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="A"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plan2"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tl3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="H"></Button>
+
+                <Button
+                    android:id="@+id/btn_tlL"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="L"></Button>
+
+                <Button
+                    android:id="@+id/tl6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="I"></Button>
+
+                <Button
+                    android:id="@+id/btn_tlC"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="C"></Button>
+
+                <Button
+                    android:id="@+id/btn_tlP"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tile_empty"
+                    android:text="P"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
 </LinearLayout>

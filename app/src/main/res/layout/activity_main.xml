@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"></Button>
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_about"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_choi_thu"></Button>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_exit"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/btn_about"></Button>
 
     <ImageView
         android:id="@+id/imageView3"

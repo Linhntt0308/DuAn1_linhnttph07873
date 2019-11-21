@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.example.duan1.dialog.ExitDialog;
+import com.example.duan1.dialog.UserDialog;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
 
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     private void initView() {
         findViewById(R.id.iv_choi_thu).setOnClickListener(this);
-
+        findViewById(R.id.btn_about).setOnClickListener(this);
+        findViewById(R.id.btn_exit).setOnClickListener(this);
 
 
     }
@@ -36,7 +38,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             case R.id.iv_choi_thu:
                 goToPlay();
                 break;
-
+            case R.id.btn_about:
+                goToAbout();
+                break;
+            case R.id.btn_exit:
+                ExitDialog exitDialog = new ExitDialog(this);
+                exitDialog.show();
             default:
                 break;
         }
@@ -52,5 +59,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         Intent intent = new Intent();
         intent.setClass(this, PlayActivity.class);
         startActivity(intent);
+    }
+    private void goToAbout() {
+       startActivity(new Intent(this,About.class));
     }
 }
