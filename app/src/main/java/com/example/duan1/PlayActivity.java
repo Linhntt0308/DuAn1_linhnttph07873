@@ -1,11 +1,9 @@
 package com.example.duan1;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -20,12 +18,12 @@ import com.example.duan1.dialog.AnswerDialog;
 import com.example.duan1.dialog.ItemDialog;
 import com.example.duan1.dialog.SupportDialog;
 import com.example.duan1.dialog.UserDialog;
-import com.example.duan1.module.appData;
-import com.example.duan1.module.questionpresenter;
+import com.example.duan1.module.AppData;
+import com.example.duan1.module.IappData;
 
 import java.util.ArrayList;
 
-public class PlayActivity extends AppCompatActivity implements View.OnClickListener, appData {
+public class PlayActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int LEVEL_MUSIC_ON = 0;
     private static final int LEVEL_MUSIC_OFF = 1;
     private ImageView mIvMusic, mIvPicture;
@@ -35,7 +33,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private int numberAnswer;
     public int point = 0;
     private int t = 0;
-    private questionpresenter question;
+    private AppData appData;
     private Button mBtnNext;
     private Typeface mTypeface;
     private TextView mTvSuppost;
@@ -90,7 +88,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         mIvMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                question.music();
+           setIvMusic();
                 if (ring.isPlaying()) {
                     ring.pause();
                 } else if (!ring.isPlaying()) {
@@ -103,45 +101,27 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         mIvPicture.setImageResource(R.drawable.tohoai);
         tl();
-        question = new questionpresenter(this);
+
 
     }
 
-    @Override
-    public void toNextQuestion() {
-
-    }
-
-    @Override
     public Drawable getImageDrawable() {
         mIvPicture.setImageResource(R.drawable.cattuong);
         return null;
     }
 
-    @Override
-    public int getId() {
-        return 0;
-    }
 
-    @Override
+
     public String getSuggest() {
+        mTvPoint.setText(String.valueOf(point-5));
         mTvSuppost.setText("Dế mèn phiêu lưu kí");
         supportDialog.cancel();
         return null;
     }
 
-    @Override
-    public String getKQ() {
-        return null;
-    }
 
-    @Override
-    public ArrayList<String> getShortAnswer() {
-        return null;
-    }
 
-    @Override
-    public void setT() {
+public void setT() {
 
         tlT.setText("T");
         tlO.setText("O");
@@ -164,7 +144,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
+
     public void tl() {
 
 
@@ -217,7 +197,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 t = t + 1;
                 if (t >= 6) {
                     Toast.makeText(PlayActivity.this, "Chúc mừng bạn đã trả lời đúng.", Toast.LENGTH_LONG).show();
-                    question.getIMG();
+      getImageDrawable();
                     setT();
                 }
             }
@@ -226,7 +206,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
+
     public void goToSupportDialog() {
 
 
@@ -239,7 +219,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
+
     public void setIvMusic() {
 
         int level = mIvMusic.getDrawable().getLevel();
@@ -256,7 +236,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    @Override
+
     public void goToItemDialog() {
 
         ItemDialog itemDialog = new ItemDialog(this);
@@ -284,13 +264,13 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 answerDialog.show();
                 break;
             case R.id.txt_suggest:
-                question.supDia();
+             goToSupportDialog();
                 break;
             case R.id.txt_point:
-                question.itemDia(this);
+         goToItemDialog();
                 break;
             case R.id.iv_music:
-                question.music();
+         setIvMusic();
                 break;
             case R.id.iv_back:
                 onBackPressed();
@@ -300,7 +280,9 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.fl_suppost_2:
 
             case R.id.fl_suppost_3:
-                question.support();
+               if (point>5)
+               { getSuggest();}
+               else {Toast.makeText(this,"Bạn không đủ tiền",Toast.LENGTH_LONG).show();}
                 break;
 
             case R.id.fl_suppost_4:

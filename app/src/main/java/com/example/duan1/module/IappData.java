@@ -4,9 +4,15 @@ import android.graphics.drawable.Drawable;
 
 import java.util.ArrayList;
 
-public interface appData  {
+public interface IappData {
     void toNextQuestion();
+
+    ArrayList<String> getFullAnswer();
+
     Drawable getImageDrawable();
+
+    String getDescription();
+
     int getId();
 
     String getSuggest();
@@ -14,13 +20,8 @@ public interface appData  {
     String getKQ();
 
     ArrayList<String> getShortAnswer();
-    //
 
-    void setT();
-    void tl();
-    void goToSupportDialog();
-    void setIvMusic();
-    void fullScreen();
+    ArrayList<String> getSelectedCharacter();
 
-    void goToItemDialog();
+    int getResCharNum();
 }
