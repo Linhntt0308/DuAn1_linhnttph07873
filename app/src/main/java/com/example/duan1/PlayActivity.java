@@ -24,7 +24,6 @@ import com.example.duan1.dialog.ItemHeartDialog;
 import com.example.duan1.dialog.SupportDialog;
 import com.example.duan1.dialog.UserDialog;
 import com.example.duan1.module.AppData;
-import com.example.duan1.module.IappData;
 
 import java.util.ArrayList;
 import java.util.Collections;
