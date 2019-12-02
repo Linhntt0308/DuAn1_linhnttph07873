@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,9 +41,9 @@
                             android:layout_marginTop="25dp"
                             android:gravity="center"
                             android:text="Trợ giúp"
-                            android:textColor="#FF9800"
-                            android:textStyle="bold"
-                            android:textSize="40dp" />
+                            android:textColor="#FF5608"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -55,9 +55,9 @@
                         <FrameLayout
                             android:id="@+id/fl_suppost_1"
                             android:layout_width="304dp"
-                            android:layout_height="67dp"
-                            android:layout_marginTop="20dp"
-                            android:background="@drawable/suggest_item_border">
+                            android:layout_height="80dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/bong">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -80,9 +80,8 @@
                         <FrameLayout
                             android:id="@+id/fl_suppost_2"
                             android:layout_width="307dp"
-                            android:layout_height="55dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/suggest_item_border">
+                            android:layout_height="80dp"
+                            android:background="@drawable/bong">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -105,9 +104,8 @@
                         <FrameLayout
                             android:id="@+id/fl_suppost_3"
                             android:layout_width="305dp"
-                            android:layout_height="56dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/suggest_item_border">
+                            android:layout_height="80dp"
+                            android:background="@drawable/bong">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -130,9 +128,8 @@
                         <FrameLayout
                             android:id="@+id/fl_suppost_4"
                             android:layout_width="305dp"
-                            android:layout_height="57dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/suggest_item_border">
+                            android:layout_height="80dp"
+                            android:background="@drawable/bong">
 
                             <ImageView
                                 android:layout_width="40dp"

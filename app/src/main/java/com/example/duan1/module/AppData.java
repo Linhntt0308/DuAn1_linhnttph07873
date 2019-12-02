@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class AppData implements IappData {
     public static int questionNumber = -1;
     private static final String QUESTION_PATH = "data/question.txt";
     private Context context;
+    private QuestionInfor questionInfor;
 public  AppData(Context context) throws Exception{
     this.context = context;
     // read question data
@@ -38,7 +40,8 @@ public  AppData(Context context) throws Exception{
 }
     @Override
     public void toNextQuestion() {
-
+        questionNumber++;
+        questionInfor = new QuestionInfor(questionData[questionNumber].split(",\n"));
     }
 
     @Override
@@ -48,33 +51,41 @@ public  AppData(Context context) throws Exception{
 
     @Override
     public Drawable getImageDrawable() {
+        Drawable drawable = null;
+        try {
+            InputStream is = context.getAssets().open(questionInfor.getImagePath());
+            drawable = Drawable.createFromStream(is, null);
+            is.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return drawable;
 
-        return null;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return questionInfor.getDescription();
     }
 
     @Override
     public int getId() {
-        return 0;
+        return questionInfor.getId();
     }
 
     @Override
     public String getSuggest() {
-        return null;
+        return questionInfor.getSuggest();
     }
 
     @Override
     public String getKQ() {
-        return null;
+        return questionInfor.getKq();
     }
 
     @Override
     public ArrayList<String> getShortAnswer() {
-        return null;
+        return questionInfor.getShortAnswer();
     }
 
     @Override

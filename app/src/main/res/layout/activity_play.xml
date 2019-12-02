@@ -70,41 +70,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btnda1"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/tile_hover" />
 
-                <Button
-                    android:id="@+id/btnda2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/tile_hover" />
-
-                <Button
-                    android:id="@+id/btnda3"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/tile_hover" />
-
-                <Button
-                    android:id="@+id/btnda4"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/tile_hover" />
-
-                <Button
-                    android:id="@+id/btnda5"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/tile_hover" />
-
-                <Button
-                    android:id="@+id/btnda6"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/tile_hover" />
             </LinearLayout>
 
             <LinearLayout
@@ -130,7 +96,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="203dp"
+            android:layout_height="220dp"
             android:background="@drawable/te"
             android:gravity="center"
             android:orientation="vertical">
@@ -138,94 +104,25 @@
             <LinearLayout
                 android:id="@+id/plan1"
                 android:layout_width="match_parent"
-                android:layout_height="63dp"
+                android:layout_height="80dp"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/tl1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="T"></Button>
-
-                <Button
-
-                    android:id="@+id/btn_tlb"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="B"></Button>
-
-                <Button
-                    android:id="@+id/tl2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="O"></Button>
-
-                <Button
-                    android:id="@+id/tl4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="O"></Button>
-
-                <Button
-                    android:id="@+id/tl5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="A"></Button>
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/plan2"
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="80dp"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/tl3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="H"></Button>
-
-                <Button
-                    android:id="@+id/btn_tlL"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="L"></Button>
-
-                <Button
-                    android:id="@+id/tl6"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="I"></Button>
-
-                <Button
-                    android:id="@+id/btn_tlC"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="C"></Button>
-
-                <Button
-                    android:id="@+id/btn_tlP"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/tile_empty"
-                    android:text="P"></Button>
 
             </LinearLayout>
 

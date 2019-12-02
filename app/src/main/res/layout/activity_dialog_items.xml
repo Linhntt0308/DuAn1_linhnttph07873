@@ -16,15 +16,15 @@
             android:padding="20dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="337dp"
+                android:layout_width="358dp"
+                android:layout_height="298dp"
                 android:background="@drawable/khunghelp"
                 android:orientation="vertical">
 
 
                 <LinearLayout
-                    android:layout_width="342dp"
-                    android:layout_height="297dp"
+                    android:layout_width="323dp"
+                    android:layout_height="266dp"
                     android:layout_margin="5dp"
                     android:orientation="vertical">
 
@@ -39,7 +39,7 @@
                             android:layout_marginTop="25dp"
                             android:gravity="center"
                             android:text="Coin"
-                            android:textColor="#B36C04"
+                            android:textColor="#B35604"
                             android:textSize="40dp"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -48,14 +48,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="20dp">
+                        android:padding="0dp">
 
                         <FrameLayout
                             android:id="@+id/fm_freeMoney_x3"
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:layout_marginTop="20dp"
-                            android:background="@drawable/suggest_item_border">
+                            android:layout_height="80dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/bong"
+                            android:padding="20dp">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -78,9 +79,10 @@
                         <FrameLayout
                             android:id="@+id/fm_freeMoney_x10"
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:layout_marginTop="10dp"
-                            android:background="@drawable/suggest_item_border">
+                            android:background="@drawable/bong"
+                            android:padding="20dp">
 
                             <ImageView
                                 android:layout_width="40dp"

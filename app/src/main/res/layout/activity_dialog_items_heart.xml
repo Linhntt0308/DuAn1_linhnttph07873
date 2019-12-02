@@ -54,9 +54,9 @@
                         <FrameLayout
                             android:id="@+id/fm_freeHeart_x1"
                             android:layout_width="301dp"
-                            android:layout_height="63dp"
+                            android:layout_height="80dp"
                             android:layout_marginTop="30dp"
-                            android:background="@drawable/suggest_item_border"
+                            android:background="@drawable/bong"
                             android:paddingLeft="20dp">
 
                             <ImageView
