@@ -9,25 +9,27 @@
     android:gravity="center|center"
     android:paddingBottom="100dp"
     tools:context=".MainActivity">
+
     <Button
         android:id="@+id/iv_choi_thu"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="347dp"
+        android:layout_height="96dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/nutxanh"
         android:fontFamily="sans-serif"
-        android:textStyle="bold"
         android:text="Play Game"
         android:textColor="#FFFF"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"></Button>
+
     <Button
         android:id="@+id/btn_about"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="341dp"
+        android:layout_height="94dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/nutxanh"
         android:fontFamily="sans-serif"
@@ -42,8 +44,8 @@
 
     <Button
         android:id="@+id/btn_exit"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="341dp"
+        android:layout_height="95dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/nutxanh"
         android:fontFamily="sans-serif"
@@ -58,8 +60,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_width="353dp"
+        android:layout_height="163dp"
         android:src="@drawable/xbhai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

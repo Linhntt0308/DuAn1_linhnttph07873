@@ -35,7 +35,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="91dp"
+                            android:layout_height="78dp"
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:text="Lượt trả lời"
@@ -70,8 +70,8 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:layout_width="317dp"
-                            android:layout_height="111dp"
+                            android:layout_width="283dp"
+                            android:layout_height="116dp"
                             android:gravity="center"
                             android:text="Trả lời đúng câu hỏi sẽ được tặng 1 lượt trả lời. Trả lời sai đáp án sẽ bị trừ 1 lượt"
                             android:textColor="#880404"

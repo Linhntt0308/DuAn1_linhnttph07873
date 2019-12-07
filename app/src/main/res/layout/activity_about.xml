@@ -12,13 +12,14 @@
         android:layout_width="1500dp"
         android:layout_height="1498dp"
         android:src="@drawable/anhnenabout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="351dp"
-        android:layout_height="195dp"
+        android:layout_width="322dp"
+        android:layout_height="128dp"
         android:src="@drawable/xbhai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,13 +27,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="335dp"
-        android:layout_height="466dp"
-        android:layout_marginTop="16dp"
-        android:text="Cách chơi của game tương tự như Game show Đuổi Hình Bắt Chữ hầu hết mọi người đã quá quen thuộc. Ngoài hình ảnh, còn có các ô chữ và các chữ cái để gợi ý thêm cho người chơi. Bạn có thể sẽ không nhịn được cười khi mở ra các đáp án, những khuôn ảnh tưởng chừng như không liên quan, nhưng khi ghép lại với nhau lại tạo thành những câu chữ kỳ thú."
+        android:layout_width="308dp"
+        android:layout_height="445dp"
 
+        android:text="Cách chơi của game tương tự như Game show Đuổi Hình Bắt Chữ hầu hết mọi người đã quá quen thuộc. Ngoài hình ảnh, còn có các ô chữ và các chữ cái để gợi ý thêm cho người chơi. Bạn có thể sẽ không nhịn được cười khi mở ra các đáp án, những khuôn ảnh tưởng chừng như không liên quan, nhưng khi ghép lại với nhau lại tạo thành những câu chữ kỳ thú."
         android:textColor="#704301"
-        android:textSize="27sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />

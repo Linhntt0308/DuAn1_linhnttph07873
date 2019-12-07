@@ -1,6 +1,7 @@
 package com.example.duan1;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -190,14 +191,13 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private void showAnswer(int size) {
         for (int i = 0; i < size; i++) {
             final Button button = new Button(this);
-            button.setWidth(50);
-            button.setHeight(50);
+
             button.setBackgroundResource(R.drawable.tile_empty);
 
             button.setText("");
             button.setId(i);
             button.setTypeface(mTypeface);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(120, 135);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(70, 75);
             button.setLayoutParams(params);
             if (i < 8) {
                 mAnswer1.addView(button);
@@ -250,14 +250,13 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private void viewAnswer(final ArrayList<String> list) {
         for (int i = 0; i < list.size(); i++) {
             final Button button = new Button(this);
-            button.setWidth(200);
-            button.setHeight(200);
+
             button.setBackgroundResource(R.drawable.tile_hover);
 
             button.setText(list.get(i));
             button.setId(i);
             button.setTypeface(mTypeface);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(120, 135);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(70, 105);
             button.setLayoutParams(params);
             if (i < 8) {
                 mPlan1.addView(button);
@@ -397,8 +396,14 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 newQuestion();
                 break;
             case R.id.fm_user:
+
+
                 UserDialog userDialog = new UserDialog(this);
+userDialog.tvcoin.setText(point+"");
+userDialog.tvtim.setText(heart+"");
                 userDialog.show();
+
+
                 break;
             case R.id.mTv_heart:
                 AnswerDialog answerDialog = new AnswerDialog(this);
