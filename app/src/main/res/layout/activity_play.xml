@@ -21,8 +21,8 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="375dp"
-        android:layout_height="185dp"
+        android:layout_width="438dp"
+        android:layout_height="199dp"
         android:gravity="center"
         ads:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         ads:layout_constraintEnd_toEndOf="parent"
@@ -107,8 +107,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="372dp"
-        android:layout_height="208dp"
+        android:layout_width="393dp"
+        android:layout_height="198dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/te"
         android:gravity="center"
@@ -151,7 +151,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:background="@drawable/nutxanh"
-        android:text="Bỏ qua"
+        android:text="Tiếp"
         android:textColor="#FFF"
         android:visibility="visible"
         ads:layout_constraintBottom_toTopOf="@+id/linearLayout"

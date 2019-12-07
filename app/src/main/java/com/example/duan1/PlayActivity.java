@@ -399,8 +399,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
 
                 UserDialog userDialog = new UserDialog(this);
-userDialog.tvcoin.setText(point+"");
-userDialog.tvtim.setText(heart+"");
+                userDialog.tvcoin.setText(point + "");
+                userDialog.tvtim.setText(heart + "");
                 userDialog.show();
 
 
@@ -422,40 +422,33 @@ userDialog.tvtim.setText(heart+"");
                 onBackPressed();
                 break;
             case R.id.fl_suppost_1:
-                if (point<5)
-                {
-                    Toast.makeText(this,"Bạn không đủ tiền", Toast.LENGTH_LONG).show();
-                }
-                else {
+                if (point < 5) {
+                    Toast.makeText(this, "Bạn không đủ tiền", Toast.LENGTH_LONG).show();
+                } else {
                     showKyTu(0);
                 }
 
                 break;
-            case R.id.fl_suppost_2:if (point<5)
-            {
-                Toast.makeText(this,"Bạn không đủ tiền", Toast.LENGTH_LONG).show();
-            }
-            else {
-                int indext = random.nextInt(size);
-                showKyTu(indext);
-            }
+            case R.id.fl_suppost_2:
+                if (point < 5) {
+                    Toast.makeText(this, "Bạn không đủ tiền", Toast.LENGTH_LONG).show();
+                } else {
+                    int indext = random.nextInt(size);
+                    showKyTu(indext);
+                }
 
                 break;
             case R.id.fl_suppost_3:
-                if (point<5)
-                {
-                    Toast.makeText(this,"Bạn không đủ tiền", Toast.LENGTH_LONG).show();
-                }
-                else {
+                if (point < 5) {
+                    Toast.makeText(this, "Bạn không đủ tiền", Toast.LENGTH_LONG).show();
+                } else {
                     support();
                 }
                 break;
             case R.id.fl_suppost_4:
-                if (point<20)
-                {
-                    Toast.makeText(this,"Bạn không đủ tiền", Toast.LENGTH_LONG).show();
-                }
-                else {
+                if (point < 20) {
+                    Toast.makeText(this, "Bạn không đủ tiền", Toast.LENGTH_LONG).show();
+                } else {
                     hintKyTuSai();
                 }
 
@@ -481,7 +474,7 @@ userDialog.tvtim.setText(heart+"");
 
     private void support() {
         if (point > 0) {
-point-=5;
+            point -= 5;
 
             mTvPoint.setText(String.valueOf(point));
             mTvSuppost.setText(suggest);
