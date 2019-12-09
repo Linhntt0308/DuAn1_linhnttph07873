@@ -1,29 +1,17 @@
 package com.example.duan1.dialog;
-
 import android.app.Dialog;
 import android.content.Context;
-
-
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
-
-import com.example.duan1.PlayActivity;
 import com.example.duan1.R;
 
-import static android.content.Intent.getIntent;
-import static android.content.Intent.getIntentOld;
 
 
 public class UserDialog extends Dialog implements View.OnClickListener {
 public  TextView tvcoin, tvtim;
 
- public Intent i;
-PlayActivity playActivity;
     public UserDialog(Context context) {
         super(context, R.style.dialog_theme);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -33,18 +21,12 @@ PlayActivity playActivity;
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 tvcoin=findViewById(R.id.txt_coin);
-tvtim=findViewById(R.id.tv_tim);
+tvtim=findViewById(R.id.tv_timm);
 
     }
 
     private void initView() {
         findViewById(R.id.iv_close).setOnClickListener(this);
-
-
-
-
-
-
 
     }
 

@@ -101,7 +101,7 @@
                                 android:src="@drawable/heart" />
 
                             <TextView
-                                android:id="@+id/tv_tim"
+                                android:id="@+id/tv_timm"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"

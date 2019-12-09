@@ -31,7 +31,7 @@ import java.util.Collections;
 import java.util.Random;
 
 public class PlayActivity extends AppCompatActivity implements View.OnClickListener {
-    public static final String SHARED_PREFERENCES_STATE = "SHARED_PREFERENCES_STATE";
+
     public static final String SHARED_PREFERENCES_COIN = "SHARED_PREFERENCES_COIN";
     public static final String SHARED_PREFERENCES_HEART = "SHARED_PREFERENCES_HEART";
     private static final int MAX_KYTU = 16;
@@ -139,12 +139,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void readData() {
-        SharedPreferences spState = getSharedPreferences(SHARED_PREFERENCES_STATE, Context.MODE_PRIVATE);
-        if (spState != null) {
-            int state = spState.getInt("state", 0);
-            AppData.questionNumber = state - 1;
-            numberAnswer = state + 1;
-        }
+
 
         SharedPreferences spCoin = getSharedPreferences(SHARED_PREFERENCES_COIN, Context.MODE_PRIVATE);
         if (spCoin != null) {
@@ -355,10 +350,6 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void saveData() {
-        SharedPreferences spState = getSharedPreferences(SHARED_PREFERENCES_STATE, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = spState.edit();
-        editor.putInt("state", AppData.questionNumber + 1);
-        editor.apply();
 
         SharedPreferences spCoin = getSharedPreferences(SHARED_PREFERENCES_COIN, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor1 = spCoin.edit();
@@ -407,6 +398,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.mTv_heart:
                 AnswerDialog answerDialog = new AnswerDialog(this);
+                answerDialog.tv_timm.setText(" x "+ heart);
                 answerDialog.show();
                 break;
             case R.id.txt_suggest:
