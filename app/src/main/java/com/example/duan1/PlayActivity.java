@@ -65,7 +65,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         mTypeface = Typeface.createFromAsset(getAssets(), "fonts/UTM_Cookies_0.ttf");
         initView();
         fullScreen();
-        final MediaPlayer ring = MediaPlayer.create(PlayActivity.this, R.raw.trolo);
+        final MediaPlayer ring = MediaPlayer.create(PlayActivity.this, R.raw.fatrat);
         ring.start();
         mIvMusic = findViewById(R.id.iv_music);
         mIvMusic.setOnClickListener(new View.OnClickListener() {
@@ -192,7 +192,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             button.setText("");
             button.setId(i);
             button.setTypeface(mTypeface);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(70, 75);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(60, 70);
             button.setLayoutParams(params);
             if (i < 8) {
                 mAnswer1.addView(button);
@@ -247,11 +247,10 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             final Button button = new Button(this);
 
             button.setBackgroundResource(R.drawable.tile_hover);
-
             button.setText(list.get(i));
             button.setId(i);
             button.setTypeface(mTypeface);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(70, 105);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(60, 95);
             button.setLayoutParams(params);
             if (i < 8) {
                 mPlan1.addView(button);
@@ -398,7 +397,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.mTv_heart:
                 AnswerDialog answerDialog = new AnswerDialog(this);
-                answerDialog.tv_timm.setText(" x "+ heart);
+                answerDialog.tv_timm.setText(" x " + heart);
                 answerDialog.show();
                 break;
             case R.id.txt_suggest:
