@@ -53,7 +53,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private String suggest;
 
     private ImageView mIvMusic, mIvPicture;
-    private LinearLayout mAnswer1, mAnswer2, mPlan1, mPlan2, mAnswer;
+    private LinearLayout mAnswer1, mAnswer2, mPlan1, mPlan2;
     private TextView mTvHeart, mTvNumberAnswer, mTvPoint;
     private TextView mTvSuppost;
 
