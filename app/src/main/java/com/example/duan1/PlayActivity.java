@@ -182,7 +182,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
     }
-
+//set o tra loi
     private void showAnswer(int size) {
         for (int i = 0; i < size; i++) {
             final Button button = new Button(this);
@@ -241,7 +241,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private String RandomString(int length) {
         return chars.substring(length, length + 1);
     }
-
+//set ban phim
     private void viewAnswer(final ArrayList<String> list) {
         for (int i = 0; i < list.size(); i++) {
             final Button button = new Button(this);
@@ -503,7 +503,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void hintKyTuSai() {
-        if (point > 0) {
+        if (point >=20 ) {
             point -= 20;
             mTvPoint.setText(String.valueOf(point));
             saveDataPoint();
@@ -536,7 +536,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         try {
             for (int i = 0; i < kq.length(); i++) {
                 String KyTuDau = String.valueOf(kq.charAt(indext));
-                if (point > 0) {
+                if (point >=5) {
                     point -= 5;
                     mTvPoint.setText(String.valueOf(point));
                     for (int k = 0; k < mAnswer1.getChildCount(); k++) {

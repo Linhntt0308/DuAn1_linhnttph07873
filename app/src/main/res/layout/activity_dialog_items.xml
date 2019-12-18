@@ -71,7 +71,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="       +5 Free (AD)"
+                                android:text="       +5 Free "
                                 android:textColor="#FFFF"
                                 android:textSize="20dp"
                                 android:textStyle="bold" />
@@ -97,7 +97,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="          +10 Free (AD)"
+                                android:text="          +10 Free "
                                 android:textColor="#FFFF"
                                 android:textSize="20dp"
                                 android:textStyle="bold" />
